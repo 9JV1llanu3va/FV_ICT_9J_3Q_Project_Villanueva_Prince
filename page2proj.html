@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q3 Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo_Metrovia (2).png">
+
     <style>
         body {
-            background-image: url(https://images.summitmedia-digital.com/spotph/images/2019/09/12/joyride-640-1568284652.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
             font-family: 'Montserrat Sans';
             background-size: cover;
-            background-image: url(https://media.gettyimages.com/id/2158987140/video/bokeh-of-cars-and-traffic-lights-at-night.jpg?s=640x640&k=20&c=eEAZbd9l8ezmU-bzpesH6kKkXSqGbxa-Ez7XsA_gfWw=);
+            background-image: url(https://thumbs.dreamstime.com/b/night-city-traffic-jam-dense-cars-illuminated-street-aerial-view-dense-traffic-jam-night-vibrant-city-showcasing-380413078.jpg);
             background-repeat: no-repeat;
             backdrop-filter: blur(3px);
             min-height: 100vh;
@@ -25,114 +22,197 @@
             font-family: 'Montserrat Sans';
         }
 
+        .overlay-box {
+            background: rgba(40, 40, 40, 0.78);
+            border-radius: 15px;
+            padding: 45px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+        }
+
         .nav-link:hover {
             color: #ffd37a !important;
             transition: 0.3s;
         }
 
-        .navbar-toggler {
-            display: none;
+        blockquote {
+            border-left: 4px solid #ffc107;
+            padding-left: 15px;
         }
 
-        #pfp {
+        .navbar-toggler {
+          display: none; 
+        }
+        
+        #metrospan {
+          font-weight: 600;
+        }
+        #metroheader, #mont-header {
+          display: inline-block;
+          transform-origin: center;
+          transition: transform 0.3s ease;
+        }
+        #metroheader:hover, #mont-header:hover {
+          cursor: pointer;
+          transform: translateY(-5px);
+        }
+        #logohero {
+          display: block;
+          margin: 0 auto;
+          width: 900px;
+          height: 250px;
+          object-fit: cover;
+          transition: transform 0.6s ease;
+          
+        }
+        #logohero:hover {
+          transform: scale(1.02);
+          cursor: pointer;
+        }
+        li img {
+          width: 40px;
+          margin-right: 15px;
+        }
+        .imgs img {
+          box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.162);
+          border-radius: 30px;
+          transition: all 0.5s ease;
+        }
+        .imgs img:hover {
+          box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.269);
+          transform: translateY(-5px);
+        }
+
+          #pfp {
             display: block;
             margin: 0 auto;
         }
 
-        #regform {
-            background-color: rgb(211, 211, 211);
-            background-size: contain;
-
-            outline: 5px;
-            outline-offset: 5px;
-
-            border-style: solid;
-            border-width: 5px;
-            border-radius: 8px;
+        #Instructions {
+            color: white;
         }
 
-        #choosefile {}
+        #terms {
+            color: white;
+        }
+
+
     </style>
 </head>
 
 <body>
-    <center>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container-fluid">
+    <div class="navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="" href="page.html"><img src="Logo_Metrovia (2).png" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link" href="page.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="page.html">Registration Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="page.html">Confirmation Page</a></li>
+      </ul>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-        <div class="container-fluid">
-            <div class="navbar-collapse">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="" href="index.html"><img
-                                src="Logo_Metrovia (2).png" alt=""></a></li>
-                    <li class="nav-item"><a class="nav-link active"
-                            href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="page2proj.html">Registration Form</a></li>
-                    <li class="nav-item"><a class="nav-link" href="page3proj.html">Confirmation Page</a></li>
-                </ul>
-            </div>
-        </div>
-        <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-                <button class="btn btn-warning text-dark" type="button">Search</button>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-warning text-dark" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
         </form>
         </div>
         </div>
     </nav>
     </nav>
-
+     
+      <div class="container mt-3">
+    <div class="overlay-box text-light">
+   
     <div class="container col-lg-6">
         <br>
         <br>
+
+        <center>
         <form class="form form-control bg-dark">
             <h2 id="regform" class="bg-dark text-light" style="text-align: center;"><b>Registration Form</b></h2>
             <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" width="150px" id="pfp">
-            <button type="Submit" class="btn btn-light text-dark" id="choosefile">Choose File</button>
+            
+            <input type="file" id="number" name="number" placeholder="Enter your new/old password..." class="form-control w-75">
+            <br>
+            
+       
+              <button type="Submit" class="btn btn-light text-dark col-9" id="choosefile" onclick="document.getElementById(pfpfinish()).innerHTML=answer1;">Upload Photo</button>
             <br>
             <br>
             <h3 id="profile" class="text-light" style="text-align: center;"><b><u>Profile</u></b></h3>
             <br>
+              <details class="text-light">
+        <summary>Instructions:</summary>
+        <p id="Instructions"></p>
+        <div>
+           <h4 class="fst-italic text-light" ><b>Complete the form, make sure to submit a file of your profile before submitting fully. </b></h4> 
+        </div>
+    </details>
+            <br>
             <label for="fname" class="text-light">First Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Enter..." class="form-control w-75">
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name..." class="form-control w-75">
             <br>
 
             <label for="lname" class="text-light">Last Name:</label>
-            <input type="text" id="email" name="email" placeholder="Enter..." class="form-control w-75">
+            <input type="text" id="email" name="email" placeholder="Enter your surname name..." class="form-control w-75">
 
             <br>
             <label for="email" class="text-light">Age:</label>
-            <input type="text" id="subject" name="subject" placeholder="Enter..." class="form-control w-75">
+            <input type="text" id="subject" name="subject" placeholder="Enter a number..." class="form-control w-75">
             <br>
             <h3 id="credentials" class="text-light" style="text-align: center;"><b><u>Credentials</u></b></h3>
             <br>
             
             <label for="number" class="text-light">Contact Number:</label>
-            <input type="text" id="number" name="number" placeholder="Enter..." class="form-control w-75">
+            <input type="text" id="number" name="number" placeholder="Enter your Contact Number..." class="form-control w-75">
             <br>
 
             <label for="number" class="text-light">Email:</label>
-            <input type="text" id="number" name="number" placeholder="Enter..." class="form-control w-75">
+            <input type="text" id="number" name="number" placeholder="Enter your Email Address..." class="form-control w-75">
             <br>
 
             <label for="number" class="text-light">Enter Username:</label>
-            <input type="text" id="number" name="number" placeholder="Enter..." class="form-control w-75">
+            <input type="text" id="number" name="number" placeholder="Enter your Username..." class="form-control w-75">
             <br>
 
             <label for="number" class="text-light">Password:</label>
-            <input type="text" id="number" name="number" placeholder="Enter..." class="form-control w-75">
+            <input type="text" id="number" name="number" placeholder="Enter your new/old password..." class="form-control w-75">
             <br>
 
-            <input type="Submit" id="submit" name="submit" value="Confirm">
+            <div id="i_agree_checkbox_insertable_area"></div>
+              <form id="signupForm">
+              <label>
+               <input type="checkbox" id="terms" name="terms" class="text-light"> <a class="text-light">I agree to the </a> <a href="/terms" target="_blank">Terms and Conditions</a>
+              </label>
+                 <br><br>
+
+
+
+            <button type="Submit" id="choosefile" onclick="document.getElementById(finish()).innerHTML=answer1;">Complete</button>
+            <input type="Submit" id="submit" name="submit" value="Cancel">
+            
             <br><br>
 
         </form>
+        </form>
     </div>
 </center>
+ </div>
+  </div>
+
+    <script>
+
+        function finish() {
+        alert("You have completed your form.")
+        }
+
+        function pfpfinish() {
+        alert("You have uploaded your file.")
+        }
+        </script>
 </body>
-
 </html>
-
-
-
-
-
