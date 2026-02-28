@@ -114,19 +114,130 @@
     
     <div class="overlay-box text-light">
    
+    <div class="fare-card">
+        <h2 class="title">Metrovia</h2>
+
+        <div class="content-wrapper">
+
+            <div class="map-section">
+                <img src="https://mapa-metro.com/mapas/Manila/800-mapa-metro-manila2.png" alt="Route Map">
+            </div>
+
+
+            <div class="input-section">
+                <div class="input-group">
+                    <label>PICK-UP LOCATION:</label>
+                    <select id="pickup">
+
+                       <option value="0">North Ave.</option>
+                        <option value="3.7"> Roosevelt </option>
+                        <option value="6.7"> Balintawak </option>
+                        <option value="7.7">Monumento</option>
+                        <option value="9.6">5th Avenue</option>
+                        <option value="10.2">R. Papa</option>
+                        <option value="15">Abad Santos</option>
+                        <option value="15.3">Blumentritt</option>
+                        <option value="15.8">Tayuman</option>
+                        <option value="16.1">Bambang</option>
+                        <option value="16.3">Doroteo Jose</option>
+                        <option value="17.5">Carriedo</option>
+                        <option value="18.6 ">Central Terminal</option>
+                        <option value="19.8">United Nations</option>
+                        <option value="20.3">Pedro Gil</option>
+                        <option value="20.8 ">Quirino</option>
+                        <option value="21">Vito Cruz</option>
+                        <option value="22.4">Gil Puyat</option>
+                        <option value="23.1">Libertad</option>
+                        <option value="24.2">EDSA</option>
+                        <option value="25">Baclaran</option> 
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label>DROP-OFF LOCATION:</label>
+                    <select id="dropoff">
+                         <option value="0">North Ave.</option>
+                        <option value="3.7"> Roosevelt </option>
+                        <option value="6.7"> Balintawak </option>
+                        <option value="7.7">Monumento</option>
+                        <option value="9.6">5th Avenue</option>
+                        <option value="10.2">R. Papa</option>
+                        <option value="15">Abad Santos</option>
+                        <option value="15.3">Blumentritt</option>
+                        <option value="15.8">Tayuman</option>
+                        <option value="16.1">Bambang</option>
+                        <option value="16.3">Doroteo Jose</option>
+                        <option value="17.5">Carriedo</option>
+                        <option value="18.6 ">Central Terminal</option>
+                        <option value="19.8">United Nations</option>
+                        <option value="20.3">Pedro Gil</option>
+                        <option value="20.8 ">Quirino</option>
+                        <option value="21">Vito Cruz</option>
+                        <option value="22.4">Gil Puyat</option>
+                        <option value="23.1">Libertad</option>
+                        <option value="24.2">EDSA</option>
+                        <option value="25">Baclaran</option>    
+                    </select>
+                    
+                    <div class="input-group">
+    <label>
+        <input type="checkbox" id="disc"> 20% Student/Senior Discount
+    </label>
+</div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-yellow" onclick="calculateFare(false)">Total Fare</button>
+                  
+                </div>
+            </div>  
+
+
+            <div class="fare-display">
+                <h3>Fare:</h3>
+                <div class="price" id="DisplayAns">₱ 0.00</div>
+                
+                 <div class="fare-display">
+                <h8 >Importance note:</h8>
+            
+                <h10> Plus ₱50 for rush hour</h10></div>
+
+                <script>
+                    function calculateFare() {
+                       let pickup, dropoff, basefare, perKMrate, distance, extraKM, discount;  
+                        pickup = parseFloat(document.getElementById("pickup").value);
+                        dropoff = parseFloat(document.getElementById("dropoff").value);
+                        baseFare = 55.00; 
+                        perKMrate = 25.00; 
+                        baseKM = 1.8;       
+                        discount = document.getElementById("disc").checked;
+
+                        distance = Math.max (Math.abs(dropoff - pickup), 0); 
+                        extraKM = Math.max(distance - baseKM, 0);
+
+                        let fare = baseFare + extraKM * perKMrate;
+
+
+                        
+                        fare = fare * (1 - 0.2 * discount);
+                       
+
+                      
+                        document.getElementById("DisplayAns").innerHTML = "₱ " + fare.toFixed(2);
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
         
     </div>
 </div>
-
-
-  <div class="container mt-3">
-    <div class="overlay-box text-light">
-   <center>
-
  
 
 </body>
 </html>
+
 
 
 
