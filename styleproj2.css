@@ -1,0 +1,50 @@
+<style>
+    body {
+        font-family: 'Poppins', sans-serif; /* Matched to your Google Font link */
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                    url('https://thumbs.dreamstime.com/b/night-city-traffic-jam-dense-cars-illuminated-street-aerial-view-dense-traffic-jam-night-vibrant-city-showcasing-380413078.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .registration-card {
+        background: rgba(33, 37, 41, 0.9); /* Bootstrap dark gray with transparency */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
+        margin: 50px auto;
+        color: white;
+    }
+
+    .form-control {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white !important;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .form-control:focus {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #ffc107;
+        box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+    }
+
+    #pfp {
+        border: 4px solid #ffc107;
+        padding: 5px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: #ffc107; /* Gold labels for better contrast */
+    }
+</style>
