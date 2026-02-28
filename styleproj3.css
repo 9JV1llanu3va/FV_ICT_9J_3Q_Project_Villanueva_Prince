@@ -1,0 +1,74 @@
+.fare-card {
+    background: rgba(70, 100, 110, 0.7); 
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    text-align: center;
+    color: #ffc107; 
+    background: #222;
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+    display: block;
+    width: fit-content;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.map-section img {
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+
+.input-section {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+
+.fare-display {
+    background: #001a4d; 
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.btn-yellow { background: #ffc107; border: none; padding: 8px 15px; border-radius: 5px; }
+.btn-dark { background: #222; color: white; border: none; padding: 8px 15px; border-radius: 5px; }
