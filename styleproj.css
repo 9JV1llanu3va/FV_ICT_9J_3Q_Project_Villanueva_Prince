@@ -1,0 +1,63 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #FFD700; /* Matching your yellow/gold theme */
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.main-container {
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); /* Blurs the background behind the card */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 100px auto; /* Centers the card */
+  text-align: center;
+  color: white;
+}
+
+.logo-circle {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #fceabb, #f8b500); /* Vibrant yellow gradient */
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 10px;
+}
+
+.instruction-btn {
+  display: inline-block;
+  background: #f8b500;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.instruction-btn:hover {
+  transform: scale(1.05); /* Subtle pop on hover */
+  background: #ffcc33;
+}
