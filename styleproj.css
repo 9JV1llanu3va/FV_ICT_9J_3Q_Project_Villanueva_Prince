@@ -25,6 +25,7 @@ nav a {
   max-width: 800px;
   margin: 100px auto; 
   text-align: center;
+  color-white
 }
 
 .logo-circle {
@@ -42,4 +43,5 @@ h1 {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   margin-bottom: 10px;
 }
+
 
