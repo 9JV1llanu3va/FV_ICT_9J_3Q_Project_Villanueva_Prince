@@ -188,8 +188,11 @@
 
                     <div class="d-grid gap-2">
                         <button type="finish" class="btn btn-warning btn-lg" ></a> Complete Registration</button>
-                        
-                        <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                         
+                        <button type="submit" class="btn btn-warning btn-lg">Complete Registration</button>
+
+                        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='index.html'">Cancel</button>
+
                     </div>
                 </form>
             </div>
@@ -205,9 +208,13 @@
 
     <script>
          
-            function finish() {
-        alert("You have completed your form.")
-            }
+        
+
+         function finish() {
+    alert("You have completed your form.");
+    
+    window.location.href = "your-destination-page.html"; 
+}
 
         function pfpfinish() {
         alert("You have uploaded your file.")
@@ -220,6 +227,7 @@
       
 </body>
 </html>
+
 
 
 
